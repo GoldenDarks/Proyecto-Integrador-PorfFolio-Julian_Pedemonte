@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css" , 
+              "C:/ARGENTINA PROGRAMA/Proyecto-Integrador-PorfFolio-Julian_Pedemonte/Proyecto-Integrador-PorfFolio-Julian_Pedemonte/FrontEnd/node_modules/bootstrap/dist/css/bootstrap-grid.css"
             ],
-            "scripts": []
+            "scripts": [
+              "C:/ARGENTINA PROGRAMA/Proyecto-Integrador-PorfFolio-Julian_Pedemonte/Proyecto-Integrador-PorfFolio-Julian_Pedemonte/FrontEnd/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
