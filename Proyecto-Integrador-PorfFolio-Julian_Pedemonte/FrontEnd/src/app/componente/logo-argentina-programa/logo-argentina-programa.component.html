@@ -10,7 +10,8 @@
              <a href="https://www.linkedin.com/in/julian-pedemonte-b1b1b0245/"><img src="../../../assets/Linkedin.png" alt="Linkedin"></a>
              <a href="https://www.instagram.com/julianpedemonte/"><img src="../../../assets/Instagram.png" alt="Instagram"></a>
              <a href="https://github.com/GoldenDarks"><img src="../../../assets/Github.png" alt="Github"></a> 
-             <button type="button" class="btn btn-primary">Ingresar</button>
+             <button type="button" class="btn btn-primary" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+             <button type="button" class="btn btn-primary" (click)="login()" *ngIf="isLogged">Cerrar Sesion</button>
         </div>
     </div>
 </div>

@@ -1,24 +1,26 @@
 <div class="row">
     <h1>Educacion</h1>
-    <p></p>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-warning" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
+    </div>
+
+
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-                <ul>
-            <li>
-                <h1>Escuela tecnica N° 550</h1> - <h3> 2009 - 2016 </h3>
-            </li>
-            <p></p>
-            <p>
-                Tecnico en Informatica Profesional, Granadero Baigorria
-            </p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Universidad Tecnologica Nacional de Rosario</h1> - <h3> 2016 - presente </h3>
-            </li>
-            <p></p>
-            <p>ISI: Ingenieria en Sistemas, Rosario
-            </p>
-        </ul>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><h2>{{Educacion.nombreE}}</h2> </td>
+                    <td> {{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}"> EDITAR </button></td> 
+                    
+                    <td> *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Educacion.id)"> BORRAR </button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    
+   
 </div>
